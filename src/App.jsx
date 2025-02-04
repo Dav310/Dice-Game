@@ -1,11 +1,22 @@
-import React from 'react'
-import MainPage from './component/Main Page/MainPage'
+import React, { useState } from 'react'
+import StartPage from './component/startPage/startPage'
+import Gamepage from './component/GamePage/GamePage'
 
 const App = () => {
+
+  const [gameStart ,  setGameStart] =  useState(true);
+
+  const toggleGameStart = () => {
+    setGameStart( prev => !prev );
+  };
+
+
   return (
-    <div>
-      <MainPage/>
-    </div>
+    <>
+      {
+        gameStart ? <Gamepage/> : <StartPage toggle = {toggleGameStart}/>
+      } 
+    </>
   )
 }
 

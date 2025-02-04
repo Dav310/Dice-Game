@@ -1,0 +1,9 @@
+button{
+
+    height: 72px;
+    width: 72px;
+    border : 1px solid black;
+    font-size: 25px;
+    font-weight: 600;
+    background-color: ${props => props.isSelected ? 'black' : 'white'};
+}

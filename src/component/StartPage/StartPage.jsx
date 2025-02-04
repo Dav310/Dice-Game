@@ -1,6 +1,7 @@
 import React from 'react'
-import './MainPage.css'
-const MainPage = () => {
+import './startPage.css'
+
+const StartPage = ({toggle}) => {
   return (
     <>
         <div className="main">
@@ -10,12 +11,12 @@ const MainPage = () => {
             <div className="text-section">
                 <h1>DICE GAME</h1>
                 <div className='play-btn'>
-                    <button>Play Now</button>
+                    <button onClick={toggle} >Play Now</button>
                 </div>
             </div>
         </div>
     </>
-  )
+  ) 
 }
 
-export default MainPage
+export default StartPage
