@@ -1,10 +1,10 @@
 import React, { useState } from 'react'
-import StartPage from './component/startPage/startPage'
+import StartPage from './component/StartPage/StartPage';
 import Gamepage from './component/GamePage/GamePage'
 
 const App = () => {
 
-  const [gameStart ,  setGameStart] =  useState(true);
+  const [gameStart ,  setGameStart] =  useState(false);
 
   const toggleGameStart = () => {
     setGameStart( prev => !prev );

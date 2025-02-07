@@ -1,11 +1,11 @@
-import React from 'react'
+
 import styled from 'styled-components'
 
-const Score = () => {
+const Score = ( {toScore}) => {
   return (
     <>
-      <ScoreContainer>
-        <h1>0</h1>
+      <ScoreContainer> 
+        <h1>{toScore}</h1>
         <p>Total Score</p>
       </ScoreContainer>
     </>

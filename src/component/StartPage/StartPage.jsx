@@ -1,4 +1,4 @@
-import React from 'react'
+
 import './startPage.css'
 
 const StartPage = ({toggle}) => {
@@ -11,7 +11,7 @@ const StartPage = ({toggle}) => {
             <div className="text-section">
                 <h1>DICE GAME</h1>
                 <div className='play-btn'>
-                    <button onClick={toggle} >Play Now</button>
+                    <button onClick={toggle} > Play Now </button>
                 </div>
             </div>
         </div>
