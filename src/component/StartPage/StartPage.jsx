@@ -1,5 +1,5 @@
 
-import './startPage.css'
+import './StartPage.css'
 
 const StartPage = ({toggle}) => {
   return (
